@@ -9,7 +9,7 @@ defmodule Gts do
     |> Enum.map(fn x -> String.split(x, " ") end)
     |> Enum.map(fn x -> List.delete(x, "") end)
     |> Enum.map(fn x -> List.delete(x, "") end)
-   # |> Enum.map(fn x -> Enum.map(x, fn y -> String.to_integer(y) end) end)
+   |> Enum.map(fn x -> Enum.map(x, fn y -> String.to_integer(y) end) end)
 
   end
 
